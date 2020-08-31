@@ -5,9 +5,3 @@
 	registry = 'index.docker.io/wso2'
         tag = 'v1'
         baseImage = 'wso2/wso2micro-gw:3.0.1'
-    [docker.dockerCopyFiles]
-        enable = true
-        [[docker.dockerCopyFiles.files]]
-            source = '$MICROGW_TOOLKIT_HOME/resources/conf/micro-gw.conf'
-            target = '/home/ballerina/conf/micro-gw.conf'
-            isBallerinaConf = true
